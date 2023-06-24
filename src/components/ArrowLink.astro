@@ -1,0 +1,11 @@
+---
+interface Props{
+    href? : string
+}
+const { href = "#" } = Astro.props;
+---
+
+<a class="group text-lg cursor-pointer" href={href}>
+    <slot />
+    <i class="fa-solid fa-chevron-down text-sm scale-0 -translate-y-3 group-hover:scale-100 group-hover:translate-y-0 transition-transform"></i>
+</a>
