@@ -1,37 +1,45 @@
-<section class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
-    <div class="text-center">
+<style>
+    .buttons-spining{
+        animation : spining linear 20s infinite;
+    }
+    @keyframes spining{
+        to{rotate : 360deg}
+    }
+    .button-fire:hover{
+        --color : rgb(91 , 101 , 241);
+        box-shadow: 0 0 10px var(--color) , 0 0 15px var(--color) , 0 0 25px var(--color),
+        inset 0 0 10px var(--color) , inset 0 0 15px var(--color);
+    }
+</style>
+<section class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0 lg:py-20">
+    <div class="flex flex-col text-center lg:text-start lg:justify-center">
         <div class="mb-12">
-            <h1 class="pt-12 text-3xl font-medium mb-4">
+            <h1 class="pt-12 text-3xl font-medium mb-4 md:text-4xl lg:text-5xl">
                 Juan Villegas 👋 <br />
                 <span
                     class="bg-gradient-to-r from-yellow-200 via-red-400 to-indigo-400 text-transparent bg-clip-text"
                     >FronEnd Developer</span
                 >
             </h1>
-            <h2>
+            <h2 class="lg:max-w-[80%] md:text-lg lg:text-xl">
                 Artista 3D y Desarrollador web preparado para el lanzamiento 🚀
             </h2>
         </div>
-        <div class="flex flex-wrap justify-center gap-4">
-            <button class="bg-indigo-500 px-6 py-2 rounded-full"
+        <div class="flex flex-wrap justify-center gap-4 lg:justify-start">
+            <button class="bg-indigo-500 button-fire px-6 py-2 rounded-full transition-shadow"
                 >Sobre mi</button
             >
             <button
-                class="border-indigo-500 text-indigo-500 border-2 px-6 py-2 rounded-full"
-                >Ver CV</button
+                class="border-indigo-500 text-indigo-500 relative group border-2 px-6 py-2 rounded-full hover:pr-10 transition-[padding] overflow-hidden"
+            >
+                Ver CV
+                <i class="fa-regular fa-file-lines absolute right-0 translate-x-full text-2xl group-hover:-translate-x-[80%] transition-transform"></i>
+            </button
             >
         </div>
     </div>
     <div>
-        <style>
-            .buttons-spining{
-                /* animation : spining linear 10s infinite; */
-            }
-            @keyframes spining{
-                to{rotate : 360deg}
-            }
-        </style>
-        <div class="relative isolate max-w-[450px] mx-auto">
+        <div class="relative isolate max-w-[450px] mx-auto lg:max-w-[500px]">
             <div class="absolute bg-gradient-to-r from-yellow-200 via-red-400 to-indigo-400 -z-10 w-[60%] aspect-square rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             <div class="border-white buttons-spining bg-opacity-70 absolute border-2 -z-10 w-full aspect-square rounded-full">
                 <img class="abolsute w-16 left-0 top-0 translate-x-1/2 translate-y-1/2" src="images/typescript_button.png" alt="typescript button 3D">
