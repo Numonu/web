@@ -1,6 +1,7 @@
 ---
 import "../global/styles.css";
 import StickyHead from "../layouts/StickyHead.astro";
+import Hero from "../layouts/Hero.astro";
 ---
 
 <html lang="es">
@@ -11,9 +12,10 @@ import StickyHead from "../layouts/StickyHead.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Portafolio de Juan Villegas | Numonu</title>
 	</head>
-	<body class="bg-noche text-neutral-50">
+	<body class="bg-noche text-neutral-50 overflow-x-hidden">
 		<div class="max-w-[1200px] mx-auto px-4">
 			<StickyHead/>
+			<Hero/>
 		</div>
 	</body>
 	<script src="https://kit.fontawesome.com/65a19dc040.js" crossorigin="anonymous"></script>
