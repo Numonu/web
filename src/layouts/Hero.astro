@@ -1,4 +1,4 @@
-<section>
+<section class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
     <div class="text-center">
         <div class="mb-12">
             <h1 class="pt-12 text-3xl font-medium mb-4">
@@ -22,5 +22,23 @@
             >
         </div>
     </div>
-    <div></div>
+    <div>
+        <style>
+            .buttons-spining{
+                /* animation : spining linear 10s infinite; */
+            }
+            @keyframes spining{
+                to{rotate : 360deg}
+            }
+        </style>
+        <div class="relative isolate max-w-[450px] mx-auto">
+            <div class="absolute bg-gradient-to-r from-yellow-200 via-red-400 to-indigo-400 -z-10 w-[60%] aspect-square rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="border-white buttons-spining bg-opacity-70 absolute border-2 -z-10 w-full aspect-square rounded-full">
+                <img class="abolsute w-16 left-0 top-0 translate-x-1/2 translate-y-1/2" src="images/typescript_button.png" alt="typescript button 3D">
+                <img class="absolute w-16 right-0 top-0 -translate-x-1/2 translate-y-1/2" src="images/firebase_button.png" alt="firebase button 3D">
+                <img class="absolute w-16 bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2" src="images/react_button.png" alt="react button 3D">
+            </div>
+            <img src="images/me.png" alt="Juan Villegas en 3D">
+        </div>
+    </div>
 </section>
