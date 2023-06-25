@@ -13,9 +13,9 @@ interface Props {
 const { data } = Astro.props;
 ---
 
-<article class="relative aspect-square group overflow-hidden">
+<article class="relative aspect-video group overflow-hidden rounded-md">
     <img
-        class="absolute h-full w-full object-cover group-hover:scale-125 duration-300 transition-transform"
+        class="absolute h-full w-full object-cover group-hover:scale-[1.1] group-hover:blur-sm duration-300 transition-transform"
         src={data.src}
         alt={data.alt}
     />
