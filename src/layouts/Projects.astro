@@ -9,7 +9,7 @@ import projects from "../database/projects.json";
         <Linner />
         Mis ultimos proyectos
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="max-w-[900px] mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12">
         {
             projects.map(e => {
                 return <ProjectCard data={e}/>
