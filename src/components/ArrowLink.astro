@@ -5,7 +5,7 @@ interface Props{
 const { href = "#" } = Astro.props;
 ---
 
-<a class="group text-lg cursor-pointer hover:text-indigo-600" href={href}>
+<a class="inline-block group text-lg cursor-pointer hover:text-indigo-500" href={href}>
     <slot />
     <i class="fa-solid fa-chevron-down text-sm scale-0 -translate-y-3 group-hover:scale-100 group-hover:translate-y-0 transition-transform"></i>
 </a>
