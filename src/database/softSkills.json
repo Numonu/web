@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Creatividad",
+		"description": "Genero ideas originales y soluciones únicas. De manera abierta y flexible puedo adaptarme rápidamente y encontrar enfoques innovadores para los desafíos.",
+		"alt": "icono de un cerebro",
+		"src": "https://www.svgrepo.com/show/482780/brain-3.svg"
+	},
+	{
+		"title": "Resolucion de Problemas",
+		"description": "Hábil en la resolución de problemas, analizando situaciones complejas y encontrando soluciones efectivas. Utilizo un enfoque lógico y creativo, considerando diversas perspectivas.",
+		"alt": "icono de unos cables",
+		"src": "https://www.svgrepo.com/show/418447/config-configuration-parameters-2.svg"
+	},
+	{
+		"title": "Comunicacion",
+		"description": "Buena comunicación y trabajo en equipo. Tengo la capacidad de expresarme de manera clara y efectiva, fomentando una buena comunicación entre los miembros del equipo.",
+		"alt": "icono de un grupo de personas",
+		"src": "https://www.svgrepo.com/show/483340/person-combination.svg"
+	},
+	{
+		"title": "Adaptabilidad",
+		"description": "Altamente adaptable y flexible en diferentes situaciones. Tengo la capacidad de ajustarme rápidamente a los cambios y encontrar soluciones efectivas.",
+		"alt": "icono de una flecha",
+		"src": "https://www.svgrepo.com/show/470222/up-trend.svg"
+	}
+]
