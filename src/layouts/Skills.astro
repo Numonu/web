@@ -1,17 +1,24 @@
 ---
 import SkillBadge from "../components/SkillBadge.astro";
+import Linner from "../components/Linner.astro";
 import skills from "../database/skills.json";
 ---
 
 <section>
     <div class=" mb-24">
-        <h2 class="text-3xl mb-16">Habilidades</h2>
+        <h2 class="text-3xl mb-16">
+            <Linner/>
+            Habilidades
+        </h2>
         <div class="flex justify-center flex-wrap flex-row gap-16 md:max-w-[75%] mx-auto">
             {skills.map((e) => <SkillBadge src={e.src} alt={e.alt} />)}
         </div>
     </div>
     <div>
-        <h2 class="text-3xl mb-12">Habilidades Blandas</h2>
-
+        <h2 class="text-3xl mb-12">
+            <Linner/>
+            Habilidades Blandas
+        </h2>
+        
     </div>
 </section>
