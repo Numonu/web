@@ -2,23 +2,40 @@
 import SkillBadge from "../components/SkillBadge.astro";
 import Linner from "../components/Linner.astro";
 import skills from "../database/skills.json";
+import soft from "../database/softSkills.json";
+import SoftSkill from "../components/SoftSkill.astro";
 ---
 
 <section>
-    <div class=" mb-24">
+    <div class="mb-24">
         <h2 class="text-3xl mb-16">
-            <Linner/>
+            <Linner />
             Habilidades
         </h2>
-        <div class="flex justify-center flex-wrap flex-row gap-16 md:max-w-[75%] mx-auto">
+        <div
+            class="flex justify-center flex-wrap flex-row gap-16 md:max-w-[75%] mx-auto"
+        >
             {skills.map((e) => <SkillBadge src={e.src} alt={e.alt} />)}
         </div>
     </div>
     <div>
         <h2 class="text-3xl mb-12">
-            <Linner/>
+            <Linner />
             Habilidades Blandas
         </h2>
-        
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {
+                soft.map((e) => {
+                    return (
+                        <SoftSkill
+                            title={e.title}
+                            description={e.description}
+                            alt={e.alt}
+                            src={e.src}
+                        />
+                    );
+                })
+            }
+        </div>
     </div>
 </section>
