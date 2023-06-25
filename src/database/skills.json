@@ -1,0 +1,54 @@
+[
+	{
+		"src": "https://www.svgrepo.com/show/349402/html5.svg",
+		"alt": "html icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/349330/css3.svg",
+		"alt": "css icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/353925/javascript.svg",
+		"alt": "javascript icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+		"alt": "typescript icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/452092/react.svg",
+		"alt": "react icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/373446/astro.svg",
+		"alt": "astro icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/353735/firebase.svg",
+		"alt": "firebase icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/452210/git.svg",
+		"alt": "git icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/475654/github-color.svg",
+		"alt": "github icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/374067/scss2.svg",
+		"alt": "sass icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/374118/tailwind.svg",
+		"alt": "tailwindcss icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/394534/unity.svg",
+		"alt": "unity icon"
+	},
+	{
+		"src": "https://www.svgrepo.com/show/353488/blender.svg",
+		"alt": "blender icon"
+	}
+]
