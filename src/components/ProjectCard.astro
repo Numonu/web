@@ -1,19 +1,23 @@
 ---
 import BubbleLink from "./BubbleLink.astro";
 interface Props {
-    title: string;
-    description: string;
-    webLink: string;
-    githubLink: string;
+    data : {
+        title: string,
+        description: string,
+        webLink: string,
+        githubLink: string,
+        src : string,
+        alt : string,
+    }
 }
-const { title, description, webLink, githubLink } = Astro.props;
+const { data } = Astro.props;
 ---
 
 <article class="relative aspect-square group overflow-hidden">
     <img
         class="absolute h-full w-full object-cover group-hover:scale-125 duration-300 transition-transform"
-        src="https://cdn.pixabay.com/photo/2023/06/11/14/11/flowers-8056102_640.jpg"
-        alt=""
+        src={data.src}
+        alt={data.alt}
     />
     <div
         class="bg-gradient-to-t from-black absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -22,15 +26,17 @@ const { title, description, webLink, githubLink } = Astro.props;
     <div
         class="absolute p-4 opacity-0 inset-0 flex flex-col justify-end -translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform_opacity] duration-300"
     >
-        <h2 class="text-2xl mb-2">{title}</h2>
+        <h2 class="text-2xl mb-2">{data.title}</h2>
         <p class="font-light mb-6">
-            {description}
+            {data.description}
         </p>
     </div>
     <div class="absolute p-4 opacity-0 inset-0 flex items-start justify-end translate-x-2 gap-4 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform_opacity] duration-300">
-        <BubbleLink>
+        <BubbleLink href={data.webLink}>
             <i class="fa-brands fa-linkedin-in"></i>
         </BubbleLink>
-        <BubbleLink><i class="fa-brands fa-github-alt"></i></BubbleLink>
+        <BubbleLink href={data.githubLink}>
+            <i class="fa-brands fa-github-alt"></i>
+        </BubbleLink>
     </div>
 </article>
