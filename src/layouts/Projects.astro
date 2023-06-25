@@ -1,6 +1,7 @@
 ---
 import Linner from "../components/Linner.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import projects from "../database/projects.json";
 ---
 
 <section>
@@ -8,12 +9,11 @@ import ProjectCard from "../components/ProjectCard.astro";
         <Linner />
         Mis ultimos proyectos
     </h2>
-    <div class="grid grid-cols-1">
-        <ProjectCard
-            title="Mi Proyecto Super Epico"
-            description="Ese es mi proyecto super epico y super GODines"
-            webLink="#"
-            githubLink="#"
-        />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {
+            projects.map(e => {
+                return <ProjectCard data={e}/>
+            })
+        }
     </div>
 </section>
