@@ -1,35 +1,29 @@
 ---
 import ArrowLink from "../components/ArrowLink.astro";
 import BubbleLink from "../components/BubbleLink.astro";
-
 ---
-<script>
-    const stickyNav = document.getElementById("sticky-nav");
-    window.document.addEventListener("scroll" , e => {
-        const scroll = window.scrollY;
-        if(!stickyNav)return;
-        if(scroll > 50){
-            stickyNav.style.backgroundColor = "rgba(23,23,23,.5)";
-            stickyNav.style["backdrop-filter" as any] = "blur(12px)";
-        }
-        else{
-            stickyNav.style.backgroundColor = "transparent";
-            stickyNav.style["backdrop-filter" as any] = "none";
-        }
-    })
-</script>
-<header id="sticky-nav" class="z-50 top-0 py-4 lg:sticky transition-[background-color_opacity] duration-700">
-    <div class="max-w-[1200px] mx-auto flex flex-col gap-4 items-center md:flex-row md:justify-between ">
 
-        <h2 class="text-2xl">
-            Numonu
-        <span class="bg-indigo-500 inline-block w-2 aspect-square rounded-full"></span>
+<header
+    class="py-4 max-w-[1200px] mx-auto flex flex-col gap-4 items-center md:flex-row md:justify-between"
+>
+    <h2 class="text-2xl">
+        Numonu
+        <span class="bg-indigo-500 inline-block w-2 aspect-square rounded-full"
+        ></span>
     </h2>
     <nav>
         <ul class="flex gap-4 lg:hidden">
-            <li><BubbleLink><i class="fa-brands fa-instagram"></i></BubbleLink></li>
-            <li><BubbleLink><i class="fa-brands fa-linkedin-in"></i></BubbleLink></li>
-            <li><BubbleLink><i class="fa-brands fa-github-alt"></i></BubbleLink></li>
+            <li>
+                <BubbleLink><i class="fa-brands fa-instagram"></i></BubbleLink>
+            </li>
+            <li>
+                <BubbleLink>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </BubbleLink>
+            </li>
+            <li>
+                <BubbleLink><i class="fa-brands fa-github-alt"></i></BubbleLink>
+            </li>
         </ul>
         <ul class="hidden gap-4 text-2xl lg:flex">
             <li><ArrowLink>Inicio</ArrowLink></li>
@@ -39,5 +33,4 @@ import BubbleLink from "../components/BubbleLink.astro";
             <li><ArrowLink>Contacto</ArrowLink></li>
         </ul>
     </nav>
-</div>
 </header>
