@@ -1,0 +1,50 @@
+[
+    {
+        "title" : "Pixelscript Blog",
+        "description" : "Mi blog personal donde comparto wallpapers de programacion y tecnologia",
+        "webLink" : "https://pixelscript.web.app",
+        "githubLink" : "https://github.com/Numonu/pixelscript",
+        "src" : "images/projects/pixelscript.webp",
+        "alt" : "#"
+    },
+    {
+        "title" : "Round Chating",
+        "description" : "Aplicacion de chat en tiempo real basado en salas",
+        "webLink" : "https://numonu.github.io/roundchating/",
+        "githubLink" : "https://github.com/Numonu/roundchating",
+        "src" : "images/projects/roundchating.webp",
+        "alt" : "#"
+    },
+    {
+        "title" : "Wind Colors",
+        "description" : "Aplicacion para crear , compartir y previzualisar paletas de colores",
+        "webLink" : "https://wind-colors.web.app",
+        "githubLink" : "#",
+        "src" : "images/projects/windcolors.webp",
+        "alt" : "#"
+    },
+    {
+        "title" : "NFT Landing Page",
+        "description" : "Landing page para una tienda virtual de nft's",
+        "webLink" : "https://numonu.github.io/nft-landing-page/",
+        "githubLink" : "https://github.com/Numonu/nft-landing-page",
+        "src" : "images/projects/nft.webp",
+        "alt" : "#"
+    },
+    {
+        "title" : "Neon Landing Page",
+        "description" : "Landing page con animaciones y estetica futurista con neones",
+        "webLink" : "https://numonu.github.io/neon-landing-page/",
+        "githubLink" : "https://numonu.github.io/neon-landing-page/",
+        "src" : "images/projects/neon.webp",
+        "alt" : "#"
+    },
+    {
+        "title" : "Juicy Typing",
+        "description" : "Aplicacion web para practicar mecanografia",
+        "webLink" : "https://numonu.github.io/Juicy-Typing/",
+        "githubLink" : "https://github.com/Numonu/Juicy-Typing",
+        "src" : "images/projects/juicy.webp",
+        "alt" : "#"
+    }
+]
