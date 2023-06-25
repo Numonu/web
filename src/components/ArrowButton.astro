@@ -1,0 +1,24 @@
+---
+interface Props{
+    href? : string
+}
+const {href = "#"} = Astro.props;
+---
+<style>
+    .button-fire:hover {
+        --color: rgb(91, 101, 241);
+        box-shadow: 0 0 10px var(--color), 0 0 20px var(--color),
+            inset 0 0 10px var(--color), inset 0 0 15px var(--color);
+    }
+</style>
+<a href={href}>
+    <button
+        class="bg-indigo-500 button-fire group relative w-max px-6 py-2 rounded-full transition-shadow"
+    >
+        <span
+            class="text-indigo-500 absolute -z-10 bottom-0 left-1/2 text-2xl -translate-x-1/2 group-hover:translate-y-[110%] transition-transform"
+            ><i class="fa-solid fa-caret-down"></i></span
+        >
+        <slot />
+    </button>
+</a>
