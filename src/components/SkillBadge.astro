@@ -1,0 +1,16 @@
+---
+interface Props{
+    src : string,
+    alt : string
+}
+const {src , alt} = Astro.props;
+---
+<div
+    class="bg-gradient-to-b from-[rgb(30,35,45)] to-[hsl(220,20%,23%)] w-14 p-3 rounded-lg rotate-45"
+>
+    <img
+        class="-rotate-45"
+        src={src}
+        alt={alt}
+    />
+</div>
