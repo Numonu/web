@@ -6,6 +6,12 @@
 		"src": "https://www.svgrepo.com/show/482780/brain-3.svg"
 	},
 	{
+		"title" : "Gestion",
+		"description" : "Planifico meticulosamente mis tareas y establezco plazos realistas para completarlas. Priorizo mis actividades según su importancia, lo que me permite concentrarme en las tareas clave.",
+		"alt" : "icono de un reloj",
+		"src" : "https://www.svgrepo.com/show/509854/clock-check.svg"
+	},
+	{
 		"title": "Resolucion de Problemas",
 		"description": "Hábil en la resolución de problemas, analizando situaciones complejas y encontrando soluciones efectivas. Utilizo un enfoque lógico y creativo, considerando diversas perspectivas.",
 		"alt": "icono de unos cables",
@@ -16,11 +22,5 @@
 		"description": "Buena comunicación y trabajo en equipo. Tengo la capacidad de expresarme de manera clara y efectiva, fomentando una buena comunicación entre los miembros del equipo.",
 		"alt": "icono de un grupo de personas",
 		"src": "https://www.svgrepo.com/show/483340/person-combination.svg"
-	},
-	{
-		"title": "Adaptabilidad",
-		"description": "Altamente adaptable y flexible en diferentes situaciones. Tengo la capacidad de ajustarme rápidamente a los cambios y encontrar soluciones efectivas.",
-		"alt": "icono de una flecha",
-		"src": "https://www.svgrepo.com/show/470222/up-trend.svg"
 	}
 ]
