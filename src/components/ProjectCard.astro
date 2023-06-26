@@ -20,6 +20,7 @@ const { data } = Astro.props;
     </div>
     <div class="relative w-full h-full rounded-md overflow-hidden">
         <img
+            loading="lazy"
             class="absolute h-full w-full object-cover group-hover:scale-[1.1] group-hover:blur-sm duration-300 transition-transform"
             src={data.src}
             alt={data.alt}
