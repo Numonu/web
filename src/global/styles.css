@@ -2,3 +2,16 @@
 body{
     font-family: "Poppins" , sans-serif;
 }
+html{
+    font-size: 15px;
+}
+@media screen and (max-width : 300px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 400px) {
+    html{
+        font-size: 14px;
+    }
+}
