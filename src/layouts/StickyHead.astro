@@ -1,4 +1,5 @@
 ---
+import ArrowButton from "../components/ArrowButton.astro";
 import ArrowLink from "../components/ArrowLink.astro";
 import BubbleLink from "../components/BubbleLink.astro";
 import Logo from "../components/Logo.astro";
@@ -22,12 +23,12 @@ import Logo from "../components/Logo.astro";
                 <BubbleLink><i class="fa-brands fa-github-alt"></i></BubbleLink>
             </li>
         </ul>
-        <ul class="hidden gap-4 text-2xl lg:flex">
+        <ul class="hidden gap-4 text-2xl lg:flex items-center">
             <li><ArrowLink>Inicio</ArrowLink></li>
             <li><ArrowLink href="#about">Sobre mi</ArrowLink></li>
             <li><ArrowLink href="#skills">Habilidades</ArrowLink></li>
             <li><ArrowLink href="#projects">Proyectos</ArrowLink></li>
-            <li><ArrowLink href="#contact">Contacto</ArrowLink></li>
+            <li class="text-base"><ArrowButton href="#contact">Contacto</ArrowButton></li>
         </ul>
     </nav>
 </header>
