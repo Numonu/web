@@ -25,16 +25,7 @@ import SoftSkill from "../components/SoftSkill.astro";
         </h2>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
             {
-                soft.map((e) => {
-                    return (
-                        <SoftSkill
-                            title={e.title}
-                            description={e.description}
-                            alt={e.alt}
-                            src={e.src}
-                        />
-                    );
-                })
+                soft.map((e) => <SoftSkill data={e}/>)
             }
         </div>
     </div>
