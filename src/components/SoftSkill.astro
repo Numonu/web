@@ -9,11 +9,11 @@ interface Props{
 }
 const {data} = Astro.props;
 ---
-<div class="bg-[hsl(220,20%,13%)] relative isolate rounded-lg p-4 overflow-hidden">
+<div class="bg-[hsl(220,20%,13%)] relative isolate rounded-lg p-4 overflow-hidden shadow-[hsl(220,20%,10%)] shadow-md">
     <!--Blobs -->
-    <div class="bg-indigo-500 bg-opacity-50 -z-10 absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 w-28 aspect-square rounded-full blur-3xl"></div>
+    <div class="bg-indigo-300 bg-opacity-50 -z-10 absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 w-28 aspect-square rounded-full blur-3xl"></div>
     <!-- -->
-    <div class="bg-gradient-to-r from-yellow-200 via-red-400 to-indigo-400 w-12 p-2 mb-6 rounded-md">
+    <div class="bg-gradient-to-r from-yellow-200 via-red-400 to-indigo-400 w-12 p-2 mb-6 rounded-md shadow-[hsl(220,20%,10%)] shadow-md">
         <img
             class="invert w-full h-full max-w-xs"
             src={data.src}
