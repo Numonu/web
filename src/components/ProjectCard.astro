@@ -14,11 +14,6 @@ interface Props {
 }
 const { data } = Astro.props;
 ---
-<style>
-    .cut{
-        background-image: linear-gradient(-5deg , hsl(220,20%,19%) 20% , transparent 20%);
-    }
-</style>
 <article class="bg-[hsl(220,20%,19%)] border-neutral-300 flex flex-col border-opacity-50 border-[1.5px] rounded-md overflow-hidden group">
     <div class="aspect-video relative overflow-hidden">
         <!--Layers -->
@@ -33,7 +28,7 @@ const { data } = Astro.props;
                 <span class="block">{"<ver en Github/>"}</span>
             </a>
         </div>
-        <div class="cut absolute inset-0 pointer-events-none transition-opacity duration-300"></div>
+        <div class="bg-[hsl(220,20%,19%)] absolute inset-0 -bottom-[10%] top-[90%] -skew-y-6"></div>
         <!---->
     </div>
     <div class="p-2 pb-4">
