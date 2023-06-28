@@ -44,6 +44,10 @@
 		"alt": "tailwindcss icon"
 	},
 	{
+		"src": "https://www.svgrepo.com/show/452075/node-js.svg",
+		"alt": "nodejs icon"
+	},
+	{
 		"src": "svg/unity.svg",
 		"alt": "unity icon"
 	},
