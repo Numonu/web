@@ -39,7 +39,7 @@
         "title" : "Neon Landing Page",
         "description" : "Landing page con animaciones y estetica neon",
         "webLink" : "https://numonu.github.io/neon-landing-page/",
-        "githubLink" : "https://numonu.github.io/neon-landing-page/",
+        "githubLink" : "https://github.com/Numonu/neon-landing-page",
         "src" : "images/projects/neon.webp",
         "alt" : "neon animated web screen",
         "tags" : ["vite" , "react" , "javascript" , "tailwind"]
