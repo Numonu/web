@@ -1,9 +1,11 @@
 ---
 import BubbleLink from "./BubbleLink.astro";
+import Tag, { Names } from "./Tag.astro";
 interface Props {
     data: {
         title: string;
         description: string;
+        tags : string[]
         webLink: string;
         githubLink: string;
         src: string;
@@ -12,40 +14,25 @@ interface Props {
 }
 const { data } = Astro.props;
 ---
-
-<article class="relative aspect-video group">
-    <div
-        class="bg-gradient-to-br from-yellow-200 via-red-400 to-indigo-400 absolute w-full h-full blur-sm"
-    >
+<style>
+    .cut{
+        background-image: linear-gradient(-5deg , hsl(220,20%,19%) 20% , transparent 20%);
+    }
+</style>
+<article class="bg-[hsl(220,20%,19%)] border-neutral-300 flex flex-col border-opacity-50 border-[1.5px] rounded-md overflow-hidden">
+    <div class="aspect-video relative">
+        <img class="w-full h-full object-cover" src={data.src} alt={data.alt}>
+        <div class="cut absolute inset-0"></div>
     </div>
-    <div class="relative w-full h-full rounded-md overflow-hidden">
-        <img
-            loading="lazy"
-            class="absolute h-full w-full object-cover group-hover:scale-[1.1] group-hover:blur-sm duration-300 transition-transform"
-            src={data.src}
-            alt={data.alt}
-        />
-        <div
-            class="bg-gradient-to-t from-black absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-        </div>
-        <div
-            class="absolute p-4 opacity-0 inset-0 flex flex-col justify-end -translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform_opacity] duration-300"
-        >
-            <h2 class="text-xl mb-2">{data.title}</h2>
-            <p class="text-sm font-light">
-                {data.description}
-            </p>
-        </div>
-        <div
-            class="absolute p-4 opacity-0 inset-0 flex items-start justify-end translate-x-2 gap-4 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform_opacity] duration-300"
-        >
-            <BubbleLink href={data.webLink}>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </BubbleLink>
-            <BubbleLink href={data.githubLink}>
-                <i class="fa-brands fa-github-alt"></i>
-            </BubbleLink>
+    <div class="p-2 pb-4">
+        <h1 class="font-medium mb-2">{data.title}</h1>
+        <p class="opacity-80 text-sm font-light">{data.description}</p>
+    </div>
+    <div class="px-2 pb-2 grow flex flex-col justify-end">
+        <div class="flex flex-wrap gap-2">
+            {
+                data.tags.map((e) => <Tag name={e as Names}/>)
+            }
         </div>
     </div>
 </article>
