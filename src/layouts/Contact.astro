@@ -1,7 +1,6 @@
 ---
 import BubbleLink from "../components/BubbleLink.astro";
 import Linner from "../components/Linner.astro";
-
 ---
 
 <section id="contact" class="mb-4">
@@ -12,25 +11,35 @@ import Linner from "../components/Linner.astro";
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="mb-10">
             <h3 class="text-xl font-medium mb-4">Email:</h3>
-            <a class="text-indigo-500 hover:underline" href="mailto">juan.villegas.dev@gmail.com</a>
+            <a class="text-indigo-500 hover:underline" href="mailto"
+                >juan.villegas.dev@gmail.com</a
+            >
         </div>
         <div class="mb-10 md:order-1">
             <h3 class="text-xl font-medium mb-4">Telefono:</h3>
-            <a class="text-indigo-500 hover:underline" href="tel:51952455923">(51) 952 455 923</a>
+            <a class="text-indigo-500 hover:underline" href="tel:51952455923"
+                >(51) 952 455 923</a
+            >
         </div>
         <div class="mb-10 flex flex-col md:items-end">
             <h3 class="text-xl font-medium mb-4">Mis Redes:</h3>
             <ul class="flex gap-4">
                 <li>
-                    <BubbleLink><i class="fa-brands fa-instagram"></i></BubbleLink>
+                    <BubbleLink href="https://www.instagram.com/villegas.arts/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </BubbleLink>
                 </li>
                 <li>
-                    <BubbleLink>
+                    <BubbleLink
+                        href="https://www.linkedin.com/in/juan-villegas-dev/"
+                    >
                         <i class="fa-brands fa-linkedin-in"></i>
                     </BubbleLink>
                 </li>
                 <li>
-                    <BubbleLink><i class="fa-brands fa-github-alt"></i></BubbleLink>
+                    <BubbleLink href="https://github.com/Numonu">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </BubbleLink>
                 </li>
             </ul>
         </div>
