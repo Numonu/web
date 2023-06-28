@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "push-deploy" : "git push origin master && npm run build && firebase deploy",
+    "deploy" : "npm run build && firebase deploy"
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
