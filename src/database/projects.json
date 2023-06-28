@@ -5,7 +5,8 @@
         "webLink" : "https://pixelscript.web.app",
         "githubLink" : "https://github.com/Numonu/pixelscript",
         "src" : "images/projects/pixel.webp",
-        "alt" : "pixelscript web screen"
+        "alt" : "pixelscript web screen",
+        "tags" : ["astro" , "typescript" , "tailwind"]
     },
     {
         "title" : "Round Chating",
@@ -13,7 +14,8 @@
         "webLink" : "https://numonu.github.io/roundchating/",
         "githubLink" : "https://github.com/Numonu/roundchating",
         "src" : "images/projects/round.webp",
-        "alt" : "reoundchating web screen"
+        "alt" : "reoundchating web screen",
+        "tags" : ["vite" , "react" , "typescript" , "firebase" , "tailwind"]
     },
     {
         "title" : "Wind Colors",
@@ -21,7 +23,8 @@
         "webLink" : "https://wind-colors.web.app",
         "githubLink" : "#",
         "src" : "images/projects/wind.webp",
-        "alt" : "wind colors web screen"
+        "alt" : "wind colors web screen",
+        "tags" : ["vite" , "react" , "javascript" , "firebase" , "tailwind"]
     },
     {
         "title" : "NFT Landing Page",
@@ -29,7 +32,8 @@
         "webLink" : "https://numonu.github.io/nft-landing-page/",
         "githubLink" : "https://github.com/Numonu/nft-landing-page",
         "src" : "images/projects/nft.webp",
-        "alt" : "nft web screen"
+        "alt" : "nft web screen",
+        "tags" : ["astro" , "tailwind"]
     },
     {
         "title" : "Neon Landing Page",
@@ -37,7 +41,8 @@
         "webLink" : "https://numonu.github.io/neon-landing-page/",
         "githubLink" : "https://numonu.github.io/neon-landing-page/",
         "src" : "images/projects/neon.webp",
-        "alt" : "neon animated web screen"
+        "alt" : "neon animated web screen",
+        "tags" : ["vite" , "react" , "javascript" , "tailwind"]
     },
     {
         "title" : "Juicy Typing",
@@ -45,6 +50,7 @@
         "webLink" : "https://numonu.github.io/Juicy-Typing/",
         "githubLink" : "https://github.com/Numonu/Juicy-Typing",
         "src" : "images/projects/juicy.webp",
-        "alt" : "juicy typing web screen"
+        "alt" : "juicy typing web screen",
+        "tags" : ["html" , "css" , "javascript"]
     }
 ]
