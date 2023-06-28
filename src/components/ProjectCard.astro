@@ -19,13 +19,25 @@ const { data } = Astro.props;
         background-image: linear-gradient(-5deg , hsl(220,20%,19%) 20% , transparent 20%);
     }
 </style>
-<article class="bg-[hsl(220,20%,19%)] border-neutral-300 flex flex-col border-opacity-50 border-[1.5px] rounded-md overflow-hidden">
-    <div class="aspect-video relative">
-        <img class="w-full h-full object-cover" src={data.src} alt={data.alt}>
-        <div class="cut absolute inset-0"></div>
+<article class="bg-[hsl(220,20%,19%)] border-neutral-300 flex flex-col border-opacity-50 border-[1.5px] rounded-md overflow-hidden group">
+    <div class="aspect-video relative overflow-hidden">
+        <!--Layers -->
+        <img class="w-full h-full object-cover group-hover:blur-sm" src={data.src} alt={data.alt}>
+        <div class="bg-black absolute gap-6 inset-0 flex items-center justify-center text-center bg-opacity-0 group-hover:bg-opacity-80 transition-bg-opacity duration-300 [&>a]:opacity-0 [&>a]:transition-opacity [&>a]:duration-300">
+            <a class="group-hover:opacity-100 hover:text-indigo-500" href={data.webLink}>
+                <i class="fa-solid fa-earth-americas block text-3xl mb-2"></i>
+                <span class="block">{"<ver sitio web/>"}</span>
+            </a>
+            <a class="group-hover:opacity-100 hover:text-indigo-500" href={data.githubLink}>
+                <i class="fa-brands fa-github block text-3xl mb-2"></i>
+                <span class="block">{"<ver en Github/>"}</span>
+            </a>
+        </div>
+        <div class="cut absolute inset-0 pointer-events-none transition-opacity duration-300"></div>
+        <!---->
     </div>
     <div class="p-2 pb-4">
-        <h1 class="font-medium mb-2">{data.title}</h1>
+        <h3 class="text-lg font-medium mb-2">{data.title}</h3>
         <p class="opacity-80 text-sm font-light">{data.description}</p>
     </div>
     <div class="px-2 pb-2 grow flex flex-col justify-end">
