@@ -1,0 +1,19 @@
+<script>
+    const personaje = document.getElementById("personaje");
+    if (personaje) {
+        setTimeout(() => {
+            personaje.style.transform = "rotateZ(45deg)";
+            setTimeout(() => { personaje.style.transform = ""; }, 5000);
+        }, 15000);
+    }
+</script>
+<div
+    class="w-[25rem] aspect-square fixed left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+>
+    <img
+        id="personaje"
+        class="-translate-x-1/2 transition-transform duration-[2000ms]"
+        src="images/interface/me.webp"
+        alt="me"
+    />
+</div>
