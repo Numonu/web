@@ -36,6 +36,10 @@
 		"alt": "github icon"
 	},
 	{
+		"src": "svg/bootstrap.svg",
+		"alt": "bootstrap icon"
+	},
+	{
 		"src": "https://www.svgrepo.com/show/374067/scss2.svg",
 		"alt": "sass icon"
 	},
