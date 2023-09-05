@@ -1,5 +1,14 @@
 [
     {
+        "title" : "Spritecrafters",
+        "description" : "Aplicacion web para crear y compartir arte pixelart",
+        "webLink" : "https://spritecrafters.vercel.app",
+        "githubLink" : "#",
+        "src" : "images/projects/sprite.webp",
+        "alt" : "spritecrafters web screen",
+        "tags" : ["vite" , "react" , "typescript" , "firebase" , "tailwind"]
+    },
+    {
         "title" : "Pixelscript Blog",
         "description" : "Mi blog personal donde comparto wallpapers de programacion y tecnologia",
         "webLink" : "https://pixelscript.web.app",
@@ -7,15 +16,6 @@
         "src" : "images/projects/pixel.webp",
         "alt" : "pixelscript web screen",
         "tags" : ["astro" , "typescript" , "tailwind"]
-    },
-    {
-        "title" : "Round Chating",
-        "description" : "Aplicacion de chat en tiempo real basado en salas",
-        "webLink" : "https://numonu.github.io/roundchating/",
-        "githubLink" : "https://github.com/Numonu/roundchating",
-        "src" : "images/projects/round.webp",
-        "alt" : "reoundchating web screen",
-        "tags" : ["vite" , "react" , "typescript" , "firebase" , "tailwind"]
     },
     {
         "title" : "Wind Colors",
