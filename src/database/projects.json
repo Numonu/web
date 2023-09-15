@@ -1,8 +1,8 @@
 [
     {
         "title" : "Spritecrafters",
-        "description" : "Aplicacion web para crear y compartir arte pixelart",
-        "webLink" : "https://spritecrafters.vercel.app",
+        "description" : "Red social para crear y compartir arte pixelart",
+        "webLink" : "https://makepixel.art/",
         "githubLink" : "#",
         "src" : "images/projects/sprite.webp",
         "alt" : "spritecrafters web screen",
