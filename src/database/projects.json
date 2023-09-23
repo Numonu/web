@@ -27,6 +27,15 @@
         "tags" : ["vite" , "react" , "javascript" , "firebase" , "tailwind"]
     },
     {
+        "title" : "Yogasto",
+        "description" : "Aplicacion web para gestionar gastos y ganancias",
+        "webLink" : "https://numonu.github.io/yogasto/",
+        "githubLink" : "https://github.com/Numonu/yogasto",
+        "src" : "images/projects/yogasto.webp",
+        "alt" : "money admin web screen",
+        "tags" : ["vite" , "react" , "typescript" , "tailwind"]
+    },
+    {
         "title" : "NFT Landing Page",
         "description" : "Landing page para una tienda virtual de nft's",
         "webLink" : "https://numonu.github.io/nft-landing-page/",
@@ -34,15 +43,6 @@
         "src" : "images/projects/nft.webp",
         "alt" : "nft web screen",
         "tags" : ["astro" , "tailwind"]
-    },
-    {
-        "title" : "Neon Landing Page",
-        "description" : "Landing page con animaciones y estetica neon",
-        "webLink" : "https://numonu.github.io/neon-landing-page/",
-        "githubLink" : "https://github.com/Numonu/neon-landing-page",
-        "src" : "images/projects/neon.webp",
-        "alt" : "neon animated web screen",
-        "tags" : ["vite" , "react" , "javascript" , "tailwind"]
     },
     {
         "title" : "Juicy Typing",
