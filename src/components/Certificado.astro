@@ -1,0 +1,21 @@
+---
+const { href, src, alt , year } = Astro.props;
+---
+
+<a
+	class="border-indigo-500 block aspect-video w-[440px] p-2 rounded-xl border-2 hover:brightness-110"
+	href={href}
+	target="_blank"
+>
+	<figure class="w-full h-full mb-5 rounded-xl overflow-hidden">
+		<img
+			class="w-full h-full object-cover"
+			src={src}
+			alt={alt}
+		/>
+	</figure>
+    <footer class="flex justify-between  text-xs font-extralight">
+        <span>{alt}</span>
+        <span>{year}</span>
+    </footer>
+</a>

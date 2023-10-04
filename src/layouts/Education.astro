@@ -1,0 +1,33 @@
+---
+import Certificado from "../components/Certificado.astro";
+import Linner from "../components/Linner.astro";
+---
+
+<section class="mb-20">
+	<h2 class="text-3xl mb-12">
+		<Linner />
+		Certificados
+	</h2>
+	<div>
+		<div class="parent mx-auto flex justify-center flex-wrap gap-12">
+			<Certificado
+				href="https://app.aluracursos.com/degree/certificate/7911270a-6f97-4d1c-8d3e-b719d434d5ec"
+				src="images/certificados/reactg4.webp"
+				alt="certificado de finalizacion formacion React"
+                year="2023"
+			/>
+            <Certificado
+				href="https://app.aluracursos.com/program/certificate/ef38021d-26b5-45a8-9092-d9e35836c5ff"
+				src="images/certificados/frontend.webp"
+				alt="certificado de finalizacion formacion FrontEnd"
+                year="2022 - 2023"
+			/>
+            <Certificado
+				href="https://www.freecodecamp.org/certification/fcc204afa93-fc15-4070-b911-a77836fe8769/javascript-algorithms-and-data-structures"
+				src="images/certificados/javascript.webp"
+				alt="certificado de finalizacion formacion Javascript"
+                year="2023"
+			/>
+		</div>
+	</div>
+</section>
